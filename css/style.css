@@ -29,18 +29,22 @@ h2 {
     line-height: 40px;
     margin: 0.75em 0;
     color: #13022C;
+    letter-spacing: .08em;
 }
 
 h3 {
     font-size: 28px;
     line-height: 34px;
     margin: 0.7em 0;
+    letter-spacing: .02em;
+
 }
 
 h4 {
     font-size: 21px;
     line-height: 30px;
     margin: 14px 0;
+    letter-spacing: .02em;
 }
 
 h5 {
@@ -62,14 +66,11 @@ h6 {
 
 .sidebar a {
     border: none;
+    letter-spacing: .02em;
 }
 
 .doc-section {
     margin-bottom: 3em;
-}
-
-.pad {
-    padding-bottom: 2em;
 }
 
 a, a:visited {
@@ -127,7 +128,6 @@ body {
 
 h2 {
     font-family: 'Roboto Slab', serif;
-    letter-spacing: .08em;
 }
 
 p img {
@@ -202,7 +202,7 @@ nav ul li a:hover, nav ul li a:focus {
     border-radius: 4px;
 }
 
-.logo-border  {
+.logo-border-wordmark  {
     border: 1px solid #D7E0E0;
     border-radius: 4px;
     padding: 75px;
@@ -263,6 +263,14 @@ nav ul li a:hover, nav ul li a:focus {
 
 @media only screen and (max-width: 767px) {
 
+    .container,
+    .container .one.column, .container .one.columns, .container .two.columns, .container .three.columns, .container .four.columns, .container .five.columns, .container .six.columns, .container .seven.columns, .container .eight.columns, .container .nine.columns, .container .ten.columns, .container .eleven.columns, .container .twelve.columns, .container .thirteen.columns, .container .fourteen.columns, .container .fifteen.columns, .container .sixteen.columns, .container .one-third.column, .container .two-thirds.column {
+    }
+
+    .pad {
+        padding-bottom: 1.0em;
+    }
+
     h1 {
         font-size: 40px;
         line-height: 50px;
@@ -283,7 +291,7 @@ nav ul li a:hover, nav ul li a:focus {
     }
 
     h4 {
-        font-size: 14px;
+        font-size: 18px;
         /* line-height: 30px;
         margin: 14px 0; */
     }
@@ -312,16 +320,21 @@ nav ul li a:hover, nav ul li a:focus {
     }
 
     .misuse-border-wordmark, .misuse-border-symbol {
-        margin-bottom: 1.5em;
+        margin-bottom: .75em;
     }
 
     header {
-        height: 450px;
+        height: 400px;
         margin-bottom: 30px;
     }
 
     .top-hero {
+        max-width:330px;
         padding: 3em;
+    }
+
+    #logo-colors .logo-border-wordmark, #logo-colors .logo-border-symbol {
+        margin-bottom: 1em;
     }
 
     #brand-colors .three {
@@ -352,10 +365,14 @@ nav ul li a:hover, nav ul li a:focus {
     .misuse-border-wordmark, .misuse-border-symbol  {
         padding: 50px;
     }
+
+    .container {
+
+    }
 }
 
 @media only screen and (min-width: 768px) {
     .pad {
-        padding-bottom: 75px;
+        padding-bottom: 3.5em;
     }
 }
